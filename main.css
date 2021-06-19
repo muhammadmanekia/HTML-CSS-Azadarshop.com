@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Matam.jpg); */
+    background: url(../Matam.jpg) no-repeat;
+    height: 135vh;
+    background-size:cover;
+    background-position:center;
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 1px;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color:white;
+    color:black;
+}
+.main{
+    margin: auto;
+}
+.logo{
+    color: white;
+    float: left;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px;
+    transition: 0.6s ease;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    }
+.title h1{
+    color: white;
+    font-size: 70px;
+
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    }
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color:white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color:white;
+    color:rgb(224, 08, 100);
+    }
+.sm img{
+    transition: 0.6s ease;
+}
+.ig{
+    width: 50px;
+    position: absolute;
+    top: 68%;
+    left: 45%;
+    transform: translate(-50%,-50%)
+}
+.twitter{
+    width: 60px;
+    position: absolute;
+    top: 68%;
+    left: 55%;
+    transform: translate(-50%,-50%)
+}
+.fb{
+    width: 45px;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    }

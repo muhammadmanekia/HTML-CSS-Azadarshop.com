@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 135vh;
+        background-position:center;
+        background: url(yahussain.jpg) no-repeat;
+        background-size: cover;
+    }
+    .Login{
+        width: 280px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color:white;
+    }
+    .Login h1{
+        float: left;
+        font-size: 40px;
+        border-bottom: 6px solid rgba(5, 255, 5, 0.623);
+        margin-bottom: 25px;
+        padding: 8px;
+    }
+    .textbox{
+        width: 100%;
+        overflow: hidden;
+        font-size: 20px;
+        margin: 8px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid gray;
+    }
+    .textbox input{
+        border: none;
+        outline: none;
+        background: none;
+        color:white;
+        font-size: 18px;
+    }
+    .btn{
+        width:100%;
+        background: none;
+        border: 2px solid rgba(5, 255, 5, 0.623);
+        color: rgba(5, 255, 5, 0.623);
+        font-size: 18px;
+        transition: 0.6s ease;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn:hover{
+        width:100%;
+        background: rgba(5, 255, 5, 0.623);
+        border: 2px solid rgba(5, 255, 5, 0.623);
+        color:black;
+        font-size: 18px
+    }
+   
+   .main ul{
+       float: right;
+       list-style-type: none;
+       margin-top: 25px;
+       margin-right: 20px;
+                 }
+   .main ul li{
+        display: inline-block;
+   }
+   .main ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 12px;
+            border: 1px;
+            transition: 0.6s ease;
+   }
+   .main{
+            margin: auto;
+   }
+   .main ul li a:hover{
+            background-color:white;
+            color:black;
+}
+   .signUpLink {
+    text-decoration: none;
+    color:rgba(5, 255, 5, 0.623);
+    font-weight: bold;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    transition: 0.6s ease;
+    padding-right: 105px;
+    padding-left: 103px;
+}
+    .signUpDiv:hover{
+       background-color: rgba(5, 255, 5, 0.623);
+       color: black;
+   }
+   .signUpLink:hover{
+       color: black;
+   }
+   .logo{
+            color: white;
+            float: left;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px;
+            transition: 0.6s ease;
+        }
+
+   .signUpDiv {
+        text-align: center;
+        padding: 2px;
+        border-color: rgba(5, 255, 5, 0.623);
+        border-width: 3px;
+        border-style: solid;
+        margin-top: 10px;
+        transition: 0.6s ease;
+   
+   }
+   
+
+    </style>
+    <head>
+            <title>LOGIN</title>
+    </head>
+    <body>
+        <div class=Login>
+            <h1>Login</h1>
+            <!-- <form action="login.php" method="POST"> -->
+            <div class="textbox">
+                <input type="text" placeholder="Username" id="txtusrname" name="" value="">
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="password" id="txtpwd" name="" value="">
+            </div>
+            <div>
+                <input class="btn" type="button" onclick="login()" name="" value="Sign In">
+            </div>
+            <!-- </form> -->
+            <div class="signUpDiv">
+                    <a class="signUpLink" href="Signup.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Decor</a></li>
+                    <li><a href="#">Symbolic Objects</a></li>
+                    <li><a href="#">Sound System</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Sign In.html"> Login</a></li>
+                </ul>
+        </div>
+        <div class="logo">
+                <h2> AZADARSHOP.COM </h2>
+        </div>
+    </body>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script lang="javascript">
+      function login() {
+          var username = $("#txtusrname").val()
+          var pwd = $("#txtpwd").val()
+          var mylogininfo = {username: username, password: pwd}
+
+          if (username == 'admin' && pwd == 'admin') {
+              window.location = 'index.html'
+          } else {
+              alert('invalid login')
+          }
+
+          //$.post("http://login.google.com/mylogin", mylogininfo).then( function(result) {
+          //  window.location = 'index.html'
+          //    console.dir(result)
+          //}, function(err) {
+          //    console.error(err)
+        //alert('invalid login')
+          //})
+      }
+
+
+
+  </script>
+</html>

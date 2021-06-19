@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Matam.jpg); */
+            background: url(../Matam.jpg) no-repeat;
+            height: 135vh;
+            background-size:cover;
+            background-position:center;
+        }
+        ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            float: right;
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            border: 1px;
+            transition: 0.6s ease;
+        }
+        ul li a:hover{
+            background-color:white;
+            color:black;
+        }
+        .main{
+            margin: auto;
+        }
+        .logo{
+            color: white;
+            float: left;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px;
+            transition: 0.6s ease;
+        }
+        .title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+            }
+        .title h1{
+            color: white;
+            font-size: 70px;
+
+        }
+        .button{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+            }
+        .btn{
+            border: 1px solid white;
+            padding: 10px 30px;
+            color:white;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+        .btn:hover{
+            background-color:white;
+            color:rgb(224, 08, 100);
+            }
+        .sm img{
+            transition: 0.6s ease;
+        }
+        .ig{
+            width: 50px;
+            position: absolute;
+            top: 68%;
+            left: 45%;
+            transform: translate(-50%,-50%)
+        }
+        .twitter{
+            width: 60px;
+            position: absolute;
+            top: 68%;
+            left: 55%;
+            transform: translate(-50%,-50%)
+        }
+        .fb{
+            width: 45px;
+            position: absolute;
+            top: 68%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+            }
+        .search.srchTxt{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid gray;
+            background-color: none;
+        }
+
+    </style>
+<head>
+    <title>AZADARSHOP</title>
+</head>
+<body>
+    <div class="search">
+                <input id="srchFld" class="srchTxt" type="text">
+    </div>
+    <div class="sm">    
+            <img class="fb" src="fb.png" onmouseover="this.src='fb black and white.png'" onmouseout="this.src='fb.png'">
+            <img class="ig" src="Instagram.png" onmouseover="this.src='ig black and white.png'" onmouseout="this.src='Instagram.png'">
+            <img class="twitter" src="twitter.png" onmouseover="this.src='twitter white.png'" onmouseout="this.src='twitter.png'">
+         </div>
+    <header>
+    <div class="main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Decor</a></li>
+            <li><a href="#">Symbolic Objects</a></li>
+            <li><a href="#">Sound System</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Sign In.html"> Login</a></li>
+        </ul>
+        <div class="logo">
+        <h2> AZADARSHOP.COM </h2>
+    </div>
+    </div>
+    <div class="title">
+        <h1> AZADARSHOP</h1>
+    </div>
+    <div class="button">
+        <a target="_blank" href="#" class="btn">CART</a>
+        <a target="_blank" href="Sign In.html" class="btn">LOGIN</a>
+    </div>
+    </header>
+</body>
+</html>
